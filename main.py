@@ -1,8 +1,33 @@
-first_number = int(input("What Is Your First Number? : "))
-second_number = int(input("What Is Your Second Number? : "))
+operator = input("Choose Your Operator (+, -, *, /) : ")
 
-answer = first_number + second_number
-
-print("Your First Number Is " + str(first_number))
-print("Your Second Number Is "  + str(second_number))
-print("First Number + Second Number = " + str(answer))
+if operator == '+' :
+    first_number = int(input("What Is Your First Number? : "))
+    second_number = int(input("What Is Your Second Number? : "))
+    answer = first_number + second_number
+    
+    print("First Number + Second Number = " + str(answer))
+    
+elif operator == '-' :
+    first_number = int(input("What Is Your First Number? : "))
+    second_number = int(input("What Is Your Second Number? : "))
+    answer = first_number - second_number
+    
+    print("First Number - Second Number = " + str(answer))
+    
+elif operator == '*' :
+    first_number = int(input("What Is Your First Number? : "))
+    second_number = int(input("What Is Your Second Number? : "))
+    answer = first_number * second_number
+    
+    print("First Number × Second Number = " + str(answer))
+    
+elif operator == '/':
+    first_number = int(input("What Is Your First Number? : "))
+    second_number = int(input("What Is Your Second Number? : "))
+    answer = first_number / second_number
+    
+    print("First Number ÷ Second Number = " + str(answer))
+    
+else:
+    print("That Was An Invalid Operator.")
+    print("Please Use This Operators (+, -, *, /)")
